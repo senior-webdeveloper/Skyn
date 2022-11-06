@@ -54,10 +54,13 @@ function App() {
         anchorOrigin={{ vertical, horizontal }}
         open={open}
         onClose={handleClose}
-        // message="Please make sure you take the photo with good litghting conditions!"
         key={vertical + horizontal}
       >
-        <Alert onClose={handleClose} severity="info" sx={{ width: "100%" }}>
+        <Alert
+          onClose={handleClose}
+          severity="info"
+          sx={{ width: "100%", backgroundColor: "#ca9b52" }}
+        >
           Please take the photo with a plain background!
         </Alert>
       </Snackbar>
